@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="криптография\машина.cs" />
+    <Compile Include="decidsion.cs" />
     <Compile Include="IDecidering2009Interface.cs" />
     <Compile Include="Decisioning2010EnterpriseInterfaceImplementation.cs" />
+    <Compile Include="I_FinalDecisionRepresentation.cs" />
+    <Compile Include="IStaticCompanyPreferencesAndValuesConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

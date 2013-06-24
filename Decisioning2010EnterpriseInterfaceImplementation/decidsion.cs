@@ -9,17 +9,22 @@ namespace biz_impl
     {
         public string getFinalDecision()
         {
-            throw new NotImplementedException();
+            var input = DateTime.Now.ToString();
+            var value = бизнес_сфере.машина.вычисления_хэш( input );
+            return value.ToString();
         }
 
         public string getFinal_Decision_EX(decimal weight)
         {
-            throw new NotImplementedException();
+            var decis = getFinalDecision();
+            var decis_value = Convert.ToInt32( decis );
+            decis_value = (Int32)((decimal)decis_value * weight);
+            return (string)decis_value.ToString(new Decisioning2010EnterpriseInterfaceImplementation.EnterpriseStandardFormatter());
         }
 
         public void cleanup()
         {
-            throw new NotImplementedException();
+            ;
         }
 
         public void postCleanup_garbgagecollection()

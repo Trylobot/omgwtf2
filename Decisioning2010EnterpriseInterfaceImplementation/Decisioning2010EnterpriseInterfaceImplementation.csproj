@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnterpriseStandardFormatter.cs" />
     <Compile Include="криптография\машина.cs" />
     <Compile Include="decidsion.cs" />
     <Compile Include="IDecidering2009Interface.cs" />
